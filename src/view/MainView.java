@@ -23,7 +23,6 @@ public class MainView extends VBox{
     InputPanel lengthPanel;
     InputPanel pushPanel;
     InputPanel turnPanel;
-    InputPanel timePanel;
     ButtonPanel buttonPanel;
     InputPanel volumePanel;
     Label aboutLabel;
@@ -41,7 +40,6 @@ public class MainView extends VBox{
         this.lengthPanel = new InputPanel();
         this.pushPanel = new InputPanel();
         this.turnPanel = new InputPanel();
-        this.timePanel = new InputPanel();
         this.buttonPanel = new ButtonPanel();
         this.volumePanel = new InputPanel();
         this.aboutLabel = new Label();
@@ -49,13 +47,12 @@ public class MainView extends VBox{
     }
 
     private void setComponent(){
-        this.titlePanel.setText("Eszterga térfogatszámítás");
+        this.titlePanel.setText("Eszterga megmunkálási idő");
         this.lengthPanel.setText("Megmunkált hossz: ");
         this.pushPanel.setText("Fordulatonkénti előtolás: ");
         this.turnPanel.setText("Főorsó fordulatszám (fordulatszám percenként): ");
-        this.timePanel.setText("Megmunkálási idő (perc): ");
         this.buttonPanel.setCalcButtonText("Számít");
-        this.volumePanel.setText("Térfogat: ");
+        this.volumePanel.setText("Megmunkálási idő (perc): ");
         this.aboutLabel.setText("Szabó Szebasztián, Szoft I-1-N, 2023-04-27");
 
     }
@@ -65,7 +62,6 @@ public class MainView extends VBox{
         this.getChildren().add(this.lengthPanel);
         this.getChildren().add(this.pushPanel);
         this.getChildren().add(this.turnPanel);
-        this.getChildren().add(this.timePanel);
         this.getChildren().add(this.buttonPanel);
         this.getChildren().add(this.volumePanel);
         this.getChildren().add(this.aboutLabel);
@@ -89,11 +85,6 @@ public class MainView extends VBox{
 
     public InputPanel getTurnPanel() {
         return turnPanel;
-
-    }
-
-    public InputPanel getTimePanel() {
-        return timePanel;
 
     }
     

@@ -6,18 +6,18 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path C:/Users/diak/Downloads/idomunka/lib/javaFX --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "idomunka_6b5535ed",
-            "vmArgs": "--module-path C:/Users/diak/Downloads/idomunka/lib/javaFX --add-modules javafx.controls,javafx.fxml"
+            "projectName": "idomunka_889efa1c",
+            "vmArgs": "--module-path C:/Users/diak/Desktop/SzSz.JavaS/Library/javafx-sdk-17.0.6/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path C:/Users/diak/Desktop/SzSz.JavaS/Library/javafx-sdk-17.0.6/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

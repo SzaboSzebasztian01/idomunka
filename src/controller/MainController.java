@@ -38,15 +38,13 @@ public class MainController {
         String lengthStr = this.mainPanel.getLengthPanel().getValue();
         String pushStr = this.mainPanel.getPushPanel().getValue();
         String turnStr = this.mainPanel.getTurnPanel().getValue();
-        String timeStr = this.mainPanel.getTimePanel().getValue();
         double length = Double.parseDouble(lengthStr);
         double push = Double.parseDouble(pushStr);
         double turn = Double.parseDouble(turnStr);
-        double time = Double.parseDouble(timeStr);
-        Double volume = mainModel.calcVolume(length, push, turn, time);
-        String volumeStr = volume.toString();
+        Double time = mainModel.calcVolume(length, push, turn);
+        String timeStr = Double.toString(time);
         
-        this.mainPanel.getVolumePanel().setValue(volumeStr);
+        this.mainPanel.getVolumePanel().setValue(timeStr);
     }
     
 }
