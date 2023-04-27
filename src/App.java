@@ -1,9 +1,3 @@
-import controller.MainController;
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import view.MainView;
-
 /*
  * File: App.java
  * Author: Szabó Szebasztián
@@ -14,6 +8,11 @@ import view.MainView;
  * Licenc: GNU GPL
  */
 
+import controller.MainController;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import view.MainView;
 public class App extends Application{
     public static void main(String[] args) throws Exception {
         launch(args);
@@ -29,6 +28,5 @@ public class App extends Application{
         stage.setScene(scene);
         stage.show();
     }
-
     
 }

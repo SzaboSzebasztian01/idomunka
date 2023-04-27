@@ -41,10 +41,21 @@ public class MainController {
         double length = Double.parseDouble(lengthStr);
         double push = Double.parseDouble(pushStr);
         double turn = Double.parseDouble(turnStr);
-        Double time = mainModel.calcVolume(length, push, turn);
+        Double time = MainModel.calcTime(length, push, turn);
         String timeStr = Double.toString(time);
         
         this.mainPanel.getVolumePanel().setValue(timeStr);
+    }
+
+    public boolean checkInput(String input){
+
+        if (input.matches("[0-9.,]+")) {
+            return true;        
+                
+        }else{
+            return false;
+
+        }
     }
     
 }

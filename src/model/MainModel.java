@@ -12,7 +12,7 @@ package model;
 
 public class MainModel {
 
-    public double calcVolume(double length, double push, double turn){
+    public static double calcTime(double length, double push, double turn){
         double time = length / (push * turn);
 
         return time;
